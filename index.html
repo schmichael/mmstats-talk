@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<!--
+    Google HTML5 slide template
+
+    Authors: Luke Mahé (code)
+             Marcin Wichary (code and design)
+
+             Dominic Mazzoni (browser compatibility)
+             Charles Chen (ChromeVox support)
+
+    URL: http://code.google.com/p/html5slides/
+
+==
+
+    Delicious Data with MmStats
+
+    Author: Michael Schurter
+            @schmichael
+-->
+
+<html>
+    <head>
+        <title>mmstats - Delicious Data</title>
+
+        <meta charset='utf-8'>
+        <script
+            src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+    </head>
+
+    <style>
+        .slides.template-default > article:not(.nobackground):not(.biglogo) {
+            background: white url(airship.png) 725px 575px no-repeat !important;
+        }
+        #mmstats h3 {
+            font-size: 48px;
+            line-height: 52px;
+        }
+        #mmstats .slides > article {
+            font-size: 38px;
+            line-height: 44px;
+        }
+        #mmstats a {
+            text-decoration: none;
+        }
+    </style>
+
+    <body id='mmstats' style='display: none'>
+
+        <section class='slides layout-regular template-default'>
+
+        <!-- Your slides (<article>s) go here. Delete or comment out the
+        slides below. -->
+
+
+
+        <article class='biglogo' style='background: white url(burger-time-screenshot.jpg) 50% 50% no-repeat'>
+        </article>
+
+        <article>
+            <h1>
+                Delicious Data 
+                <br>
+                with <strong><em>mmstats</em></strong>
+            </h1>
+            <p>
+                Michael Schurter
+                <br>
+                September 13, 2011
+            </p>
+        </article>
+
+
+        <article>
+        <h3>
+            The Problem
+        </h3>
+        <ul class="build">
+            <li>
+            You have an app
+            </li>
+            <li>
+            It has <em>state</em>
+            </li>
+            <li>
+            What is my app doing?
+            </li>
+            <li>
+            How do you inspect that state?
+            </li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Solution #1: Logging
+        </h3>
+        <p>Pros</p>
+        <ul class="build">
+            <li>
+            Universally supported
+            </li>
+            <li>
+            Easily enhanced
+            </li>
+            <li>
+            Persistent (assemble, analyze, aggregate, archive)
+            </li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Solution #1: Logging
+        </h3>
+        <p>Cons</p>
+        <ul class="build">
+            <li>Libraries suck</li>
+            <li>
+            Operational burden
+            <br>
+            (rotating, shipping, routing, etc.)
+            </li>
+            <li>Better at recording events than inspecting state</li>
+            <li>Difficult to predict where needed</li>
+            <li>Performance impact if too verbose</li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Solution #2: <a href="http://graphite.wikidot.com/">Graphite</a>
+        </h3>
+        <p>Pros</p>
+        <ul class="build">
+            <li>
+                Fast,
+                <a href="http://graphite.wikidot.com/screen-shots">Sexy</a>,
+                "Enterprise"
+            </li>
+            <li>
+            Python!
+            </li>
+        </ul>
+        <p>Cons</p>
+        <ul class="build">
+            <li>Do you want a graph or a graph?</li>
+            <li>
+            Have fun installing it
+            </li>
+            <li>Still not great for introspection</li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Solution #3: GDB
+        </h3>
+        <p>Pros</p>
+        <ul class="build">
+            <li>
+            Well you wanted introspection...
+            </li>
+            <li>
+            Has some Python helpers:
+            <a href="http://code.google.com/p/pygdb/">pygdb</a>,
+            <a href="https://fedorahosted.org/gdb-heap/">gdb-heap</a>
+            </li>
+        </ul>
+        <p>Cons</p>
+        <ul class="build">
+            <li>Seriously? Definitely only a last resort</li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Solution #4:
+            <a href="http://en.wikipedia.org/wiki/Java_Management_Extensions">JMX</a>
+        </h3>
+        <p>Pros</p>
+        <ul class="build">
+            <li>
+            Universally supported
+            </li>
+            <li>Powerful, extensible, 2-way</li>
+            <li>Helpful tools</li>
+        </ul>
+        <p>Cons</p>
+        <ul class="build">
+            <li>
+            Where <em>"Universal"</em> means <em>"runs on the JVM"</em>
+            </li>
+            <li>
+            Not as easy to monitor as you'd think
+            </li>
+        </ul>
+        </article>
+
+        <article>
+        <h3>
+            Slide with a table
+        </h3>
+
+        <table>
+            <tr>
+                <th>
+                    Name
+                    <th>
+                        Occupation
+                        <tr>
+                            <td>
+                                Luke Mahé
+                                <td>
+                                    V.P. of Keepin’ It Real
+                                    <tr>
+                                        <td>
+                                            Marcin Wichary
+                                            <td>
+                                                The Michael Bay of Doodles
+                                            </table>
+                                            </article>
+
+                                            <article class='smaller'>
+                                            <h3>
+                                                Slide with a table (smaller text)
+                                            </h3>
+
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        Name
+                                                        <th>
+                                                            Occupation
+                                                            <tr>
+                                                                <td>
+                                                                    Luke Mahé
+                                                                    <td>
+                                                                        V.P. of Keepin’ It Real
+                                                                        <tr>
+                                                                            <td>
+                                                                                Marcin Wichary
+                                                                                <td>
+                                                                                    The Michael Bay of Doodles
+                                                                                </table>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h3>
+                                                                                    Styles
+                                                                                </h3>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                    <span class='red'>class="red"</span>
+                                                                                    <li>
+                                                                                    <span class='blue'>class="blue"</span>
+                                                                                    <li>
+                                                                                    <span class='green'>class="green"</span>
+                                                                                    <li>
+                                                                                    <span class='yellow'>class="yellow"</span>
+                                                                                    <li>
+                                                                                    <span class='black'>class="black"</span>
+                                                                                    <li>
+                                                                                    <span class='white'>class="white"</span>
+                                                                                    <li>
+                                                                                    <b>bold</b> and <i>italic</i>
+                                                                                </ul>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h2>
+                                                                                    Segue slide
+                                                                                </h2>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h3>
+                                                                                    Slide with an image
+                                                                                </h3>
+                                                                                <p>
+                                                                                <img style='height: 500px' src='images/example-graph.png'>
+                                                                                </p>
+                                                                                <div class='source'>
+                                                                                    Source: Sergey Brin
+                                                                                </div>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h3>
+                                                                                    Slide with an image (centered)
+                                                                                </h3>
+                                                                                <p>
+                                                                                <img class='centered' style='height: 500px' src='images/example-graph.png'>
+                                                                                </p>
+                                                                                <div class='source'>
+                                                                                    Source: Larry Page
+                                                                                </div>
+                                                                                </article>
+
+                                                                                <article class='fill'>
+                                                                                <h3>
+                                                                                    Image filling the slide (with optional header)
+                                                                                </h3>
+                                                                                <p>
+                                                                                <img src='images/example-cat.jpg'>
+                                                                                </p>
+                                                                                <div class='source white'>
+                                                                                    Source: Eric Schmidt
+                                                                                </div>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h3>
+                                                                                    This slide has some code
+                                                                                </h3>
+                                                                                <section>
+                                                                                <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+</pre>
+                                                                                </section>
+                                                                                </article>
+
+                                                                                <article class='smaller'>
+                                                                                <h3>
+                                                                                    This slide has some code (small font)
+                                                                                </h3>
+                                                                                <section>
+                                                                                <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+</pre>
+                                                                                </section>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <q>
+                                                                                    The best way to predict the future is to invent it.
+                                                                                </q>
+                                                                                <div class='author'>
+                                                                                    Alan Kay
+                                                                                </div>
+                                                                                </article>
+
+                                                                                <article class='smaller'>
+                                                                                <q>
+                                                                                    A distributed system is one in which the failure of a computer 
+                                                                                    you didn’t even know existed can render your own computer unusable.
+                                                                                </q>
+                                                                                <div class='author'>
+                                                                                    Leslie Lamport
+                                                                                </div>
+                                                                                </article>
+
+                                                                                <article class='nobackground'>
+                                                                                <h3>
+                                                                                    A slide with an embed + title
+                                                                                </h3>
+
+                                                                                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+                                                                                </article>
+
+                                                                                <article class='nobackground'>
+                                                                                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+                                                                                </article>
+
+                                                                                <article class='fill'>
+                                                                                <h3>
+                                                                                    Full-slide embed with (optional) slide title on top
+                                                                                </h3>
+                                                                                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+                                                                                </article>
+
+                                                                                <article>
+                                                                                <h3>
+                                                                                    Thank you!
+                                                                                </h3>
+
+                                                                                <ul>
+                                                                                    <li>
+                                                                                    <a href='http://www.google.com'>google.com</a>
+                                                                                </ul>
+                                                                                </article>
+
+                                                                                </section>
+
+                                                                            </body>
+                                                                        </html>
