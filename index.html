@@ -85,7 +85,7 @@
         <h3>
             The Problem
         </h3>
-        <ul class="build">
+        <ul>
             <li>
             You have an app
             </li>
@@ -109,7 +109,7 @@
             Solution #1: Logging
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>
             Universally supported
             </li>
@@ -127,7 +127,7 @@
             Solution #1: Logging
         </h3>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>Libraries suck</li>
             <li>
             Operational burden
@@ -145,7 +145,7 @@
             Solution #2: <a href="http://graphite.wikidot.com/">Graphite</a>
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>
                 Fast,
                 <a href="http://graphite.wikidot.com/screen-shots">Sexy</a>,
@@ -156,7 +156,7 @@
             </li>
         </ul>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>Do you want a graph or a graph?</li>
             <li>
             Have fun installing it
@@ -170,7 +170,7 @@
             Solution #3: <a href="https://github.com/robotadam/socketconsole">socketconsole</a>
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>Pure Python!</li>
             <li>Very useful for deadlocks, blocking code, threaded apps</li>
             <li>
@@ -186,7 +186,7 @@
             Solution #3: <a href="https://github.com/robotadam/socketconsole">socketconsole</a>
         </h3>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>CPython only</li>
             <li>Doesn't work with gevent/eventlet monkey patching</li>
             <li>Doesn't work with greenthreads</li>
@@ -200,13 +200,13 @@
             Solution #4: <a href="http://www.gevent.org/gevent.backdoor.html">REPL Backdoors</a>
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>Pure Python!</li>
             <li>Changing code at runtime is for winners</li>
             <li>Insepct all the things!</li>
         </ul>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>With great power comes great responsibility</li>
             <li>Requires threads or event loop</li>
             <li>Still can't reach all state</li>
@@ -218,7 +218,7 @@
             Solution #5: GDB
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>
             Well you wanted introspection...
             </li>
@@ -229,7 +229,7 @@
             </li>
         </ul>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>Seriously? Definitely only a last resort</li>
         </ul>
         </article>
@@ -240,7 +240,7 @@
             <a href="http://en.wikipedia.org/wiki/Java_Management_Extensions">JMX</a>
         </h3>
         <p>Pros</p>
-        <ul class="build">
+        <ul>
             <li>
             Universally supported
             </li>
@@ -248,7 +248,7 @@
             <li>Helpful tools</li>
         </ul>
         <p>Cons</p>
-        <ul class="build">
+        <ul>
             <li>
             Where <em>"Universal"</em> means <em>"runs on the JVM"</em>
             </li>
@@ -276,7 +276,7 @@
 
         <article>
         <h3>mmstats Goals</h3>
-        <ul class="build">
+        <ul>
             <li>Simple API to expose state</li>
             <li>Separate publishing from reading, aggregating, etc.</li>
             <li>Language, platform, framework agnostic</li>
@@ -288,7 +288,7 @@
 
         <article>
         <h3>What is mmstats?</h3>
-        <ul class="build">
+        <ul>
             <li>
                 <a href="http://docs.python.org/library/mmap">mmap</a>
                 allows sharing memory between processes
@@ -329,7 +329,7 @@
         <h3>Consistency without Locks</h3>
         <br>
             <p>Q: How are reads consistent without locks?</p>
-        <div class="build">
+        <div>
             <p>A: Double buffering</p>
             <table>
                 <tr>
@@ -379,7 +379,7 @@
         <h3>
             TODO
         </h3>
-        <ul class="build">
+        <ul>
             <li>
             <a href="https://github.com/schmichael/mmstats/blob/028c80367e5bdee466de5375794f2e83d4fbf387/mmstats.py#L264">
                 Learn me some metaclasses
